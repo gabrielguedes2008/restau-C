@@ -1,0 +1,92 @@
+﻿[
+    {
+        "file":  "ambiente-desktop.png",
+        "width":  1983,
+        "height":  793,
+        "bytes":  2185489
+    },
+    {
+        "file":  "ambiente-mobile.png",
+        "width":  1122,
+        "height":  1402,
+        "bytes":  2097860
+    },
+    {
+        "file":  "branding-cartoes.png",
+        "width":  1122,
+        "height":  1402,
+        "bytes":  2683102
+    },
+    {
+        "file":  "branding-corte.png",
+        "width":  1122,
+        "height":  1402,
+        "bytes":  2277925
+    },
+    {
+        "file":  "branding-fogo.png",
+        "width":  1672,
+        "height":  941,
+        "bytes":  2034261
+    },
+    {
+        "file":  "bravo-marca-conceito.png",
+        "width":  1254,
+        "height":  1254,
+        "bytes":  1183338
+    },
+    {
+        "file":  "contato-mesa.png",
+        "width":  1536,
+        "height":  1024,
+        "bytes":  2193820
+    },
+    {
+        "file":  "gravura-brasas.png",
+        "width":  1254,
+        "height":  1254,
+        "bytes":  1310696
+    },
+    {
+        "file":  "gravura-parrilla.png",
+        "width":  1536,
+        "height":  1024,
+        "bytes":  2125749
+    },
+    {
+        "file":  "hero-parrilla-desktop.png",
+        "width":  1774,
+        "height":  887,
+        "bytes":  2647627
+    },
+    {
+        "file":  "hero-parrilla-mobile.png",
+        "width":  1122,
+        "height":  1402,
+        "bytes":  2299761
+    },
+    {
+        "file":  "menu-burger.png",
+        "width":  1122,
+        "height":  1402,
+        "bytes":  2359964
+    },
+    {
+        "file":  "menu-cocktail.png",
+        "width":  1122,
+        "height":  1402,
+        "bytes":  2027324
+    },
+    {
+        "file":  "menu-parrilla.png",
+        "width":  1122,
+        "height":  1402,
+        "bytes":  2815340
+    },
+    {
+        "file":  "textura-brasas.png",
+        "width":  2172,
+        "height":  724,
+        "bytes":  1755493
+    }
+]
