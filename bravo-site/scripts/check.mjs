@@ -1,0 +1,11 @@
+import { readFile, stat } from 'node:fs/promises';
+import path from 'node:path';
+const html = await readFile('dist/index.html', 'utf8');
+const css = await readFile('dist/styles.css', 'utf8');
+const files = [...new Set([...html.matchAll(/(?:src|href)="(?!#|https?:)([^"]+)"/g)].map(m => m[1]).concat([...html.matchAll(/assets\/[a-z0-9-]+\.webp/g)].map(m => m[0]), [...css.matchAll(/assets\/[a-z0-9-]+\.webp/g)].map(m => m[0])))];
+for (const file of files) await stat(path.join('dist', file));
+const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]);
+if (new Set(ids).size !== ids.length) throw new Error('IDs duplicados');
+for (const match of html.matchAll(/href="#([^"]+)"/g)) if (!ids.includes(match[1])) throw new Error(`Âncora inexistente: ${match[1]}`);
+for (const match of html.matchAll(/<img\b[^>]*>/g)) if (!/\balt=/.test(match[0]) || !/\bwidth=/.test(match[0]) || !/\bheight=/.test(match[0])) throw new Error('Imagem sem alt ou dimensões');
+console.log(`${files.length} arquivos verificados; âncoras, IDs e imagens válidos.`);

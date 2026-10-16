@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#851F26">
+  <meta name="description" content="BRAVO — Parrilla & Bar. Cortes na brasa, bons drinques e uma mesa para ficar. Conheça a proposta da nossa casa.">
+  <title>BRAVO — Parrilla & Bar · Fogo, sabor e bons encontros</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header" id="inicio">
+    <div class="header-inner wrap">
+      <a href="#inicio" class="brand" aria-label="BRAVO — Início"><img src="assets/bravo-logo.svg" width="211" height="74" alt="BRAVO — Parrilla & Bar"></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Abrir menu"><span></span><span></span></button>
+      <nav id="navigation" aria-label="Navegação principal">
+        <a href="#nossa-casa">Nossa casa</a><a href="#cardapio">Cardápio</a><a href="#ambiente">Ambiente</a><a href="#localizacao">Localização</a><a href="#contato">Contato</a>
+        <button class="button button-small button-light" data-reserve>Reservar mesa <span aria-hidden="true">↗</span></button>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero-photo"><source media="(max-width: 767px)" type="image/webp" srcset="assets/hero-parrilla-mobile-640.webp 640w, assets/hero-parrilla-mobile-1200.webp 1122w" sizes="100vw"><source type="image/webp" srcset="assets/hero-parrilla-desktop-640.webp 640w, assets/hero-parrilla-desktop-1200.webp 1200w, assets/hero-parrilla-desktop-1800.webp 1774w" sizes="100vw"><img src="assets/hero-parrilla-desktop.jpg" width="1774" height="887" alt="Corte grelhado na parrilla com tomates e alho assados em uma tábua escura" fetchpriority="high"></picture>
+      <div class="hero-shade"></div>
+      <div class="hero-content wrap">
+        <p class="eyebrow"><span class="tiny-line"></span> FOGO, SABOR E BONS ENCONTROS</p>
+        <h1 id="hero-title">O encontro<br>começa na <em>brasa.</em></h1>
+        <p class="hero-description">Cortes na parrilla, bons drinques<br class="desktop-break"> e uma mesa para ficar.</p>
+        <div class="hero-actions"><button class="button" data-reserve>Reservar mesa <span aria-hidden="true">↗</span></button><a class="text-link light" href="#cardapio">Conheça o cardápio <span aria-hidden="true">→</span></a></div>
+      </div>
+      <div class="hero-bottom wrap"><span>PARRILLA & BAR</span><a href="#nossa-casa">Sinta o calor da nossa casa <span aria-hidden="true">↓</span></a><span>BRAVO</span></div>
+    </section>
+    <section class="our-house" id="nossa-casa" aria-labelledby="house-title">
+      <div class="wrap house-grid">
+        <div><p class="eyebrow">01 / NOSSA ESSÊNCIA</p><h2 id="house-title">Feito no fogo.<br>Servido com <em>cuidado.</em></h2><p>A brasa é o nosso ponto de partida. O resto é encontro: uma boa conversa, um corte no ponto e o prazer de dividir a mesa.</p><a href="#ambiente" class="text-link light">Entre, a casa é sua <span aria-hidden="true">→</span></a></div>
+        <div class="house-art"><img src="assets/gravura-brasas.png" width="640" height="640" alt="" loading="lazy"><span>O TEMPO DA BRASA.<br>O SABOR DO ENCONTRO.</span></div>
+      </div>
+    </section>
+    <section class="menu-section section-space" id="cardapio" aria-labelledby="menu-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">02 / À MESA</p><h2 id="menu-title">Escolha seu<br>próximo <em>favorito.</em></h2></div><div class="heading-aside"><p>Da parrilla ao último brinde.<br>Sabores para cada momento.</p><button class="text-link" data-menu="all">Explorar cardápio <span aria-hidden="true">↗</span></button></div></div>
+        <div class="menu-grid">
+          <button class="menu-card" data-menu="parrilla"><span class="card-photo"><picture><source type="image/webp" srcset="assets/menu-parrilla-640.webp 640w, assets/menu-parrilla-1200.webp 1122w" sizes="(max-width: 767px) calc(100vw - 40px), 33vw"><img src="assets/menu-parrilla.jpg" width="1122" height="1402" loading="lazy" alt="Carne grelhada fatiada com chimichurri"></picture><span class="card-tag">BRASA & TEMPO</span></span><span class="card-title">Da parrilla <span aria-hidden="true">↗</span></span><span class="card-copy">Cortes, crosta e sabor de verdade.</span></button>
+          <button class="menu-card" data-menu="burger"><span class="card-photo"><picture><source type="image/webp" srcset="assets/menu-burger-640.webp 640w, assets/menu-burger-1200.webp 1122w" sizes="(max-width: 767px) calc(100vw - 40px), 33vw"><img src="assets/menu-burger.jpg" width="1122" height="1402" loading="lazy" alt="Hambúrguer com queijo, cebola caramelizada e batatas rústicas"></picture><span class="card-tag">SEM PRESSA</span></span><span class="card-title">Entre pães <span aria-hidden="true">↗</span></span><span class="card-copy">Generoso do primeiro ao último pedaço.</span></button>
+          <button class="menu-card" data-menu="bar"><span class="card-photo"><picture><source type="image/webp" srcset="assets/menu-cocktail-640.webp 640w, assets/menu-cocktail-1200.webp 1122w" sizes="(max-width: 767px) calc(100vw - 40px), 33vw"><img src="assets/menu-cocktail.jpg" width="1122" height="1402" loading="lazy" alt="Bartender finalizando um coquetel com casca de laranja"></picture><span class="card-tag">MAIS UM BRINDE</span></span><span class="card-title">Do bar <span aria-hidden="true">↗</span></span><span class="card-copy">Bons drinques. Melhores conversas.</span></button>
+        </div>
+        <p class="menu-footnote">Uma prévia da nossa proposta. Cardápio e valores serão divulgados em breve.</p>
+      </div>
+    </section>
+    <section class="ambience" id="ambiente" aria-labelledby="ambience-title">
+      <picture><source media="(max-width: 767px)" type="image/webp" srcset="assets/ambiente-mobile-640.webp 640w, assets/ambiente-mobile-1200.webp 1122w" sizes="100vw"><source type="image/webp" srcset="assets/ambiente-desktop-1200.webp 1200w, assets/ambiente-desktop-1800.webp 1800w" sizes="100vw"><img src="assets/ambiente-desktop.jpg" width="1983" height="793" loading="lazy" alt="Proposta de salão BRAVO com mesas de madeira, bancos vinho e iluminação acolhedora"></picture>
+      <div class="wrap ambience-content"><div class="ambience-panel"><p class="eyebrow">03 / FIQUE À VONTADE</p><h2 id="ambience-title">Seu próximo<br>encontro <em>tem lugar.</em></h2><p>Luz baixa, mesa cheia e tempo para aproveitar cada momento.</p><button class="text-link" data-reserve>Vamos marcar? <span aria-hidden="true">↗</span></button></div><span class="image-caption">IMAGEM CONCEITUAL DO AMBIENTE</span></div>
+    </section>
+    <section class="location section-space" id="localizacao" aria-labelledby="location-title">
+      <div class="wrap location-grid"><div><p class="eyebrow">04 / NOS ENCONTRAMOS AQUI</p><h2 id="location-title">Venha para<br>a <em>BRAVO.</em></h2><p>Um lugar para chegar com fome<br>e sair com vontade de voltar.</p><dl class="location-details"><div><dt>ENDEREÇO</dt><dd>Endereço a definir</dd></div><div><dt>HORÁRIOS</dt><dd>Horários a definir</dd></div></dl><button class="text-link" data-location>Como chegar <span aria-hidden="true">↗</span></button><p id="location-message" class="small-note" role="status" hidden>A localização será disponibilizada assim que o endereço da casa for confirmado.</p></div><div class="location-placeholder"><svg viewBox="0 0 64 80" width="48" height="60" aria-hidden="true"><path d="M32 3C17 3 5 15 5 30c0 21 27 45 27 45s27-24 27-45C59 15 47 3 32 3Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="29" r="9" fill="none" stroke="currentColor" stroke-width="2"/></svg><span class="eyebrow">UM NOVO PONTO DE ENCONTRO</span><strong>Em breve, por aqui.</strong><p>O endereço da BRAVO será anunciado em breve.</p><span class="location-corner">BRAVO · PARRILLA & BAR</span></div></div>
+    </section>
+    <section class="contact" id="contato" aria-labelledby="contact-title"><div class="contact-photo"><picture><source type="image/webp" srcset="assets/contato-mesa-640.webp 640w, assets/contato-mesa-1200.webp 1200w" sizes="(max-width: 767px) 100vw, 50vw"><img src="assets/contato-mesa.jpg" width="1536" height="1024" loading="lazy" alt="Mesa posta com taças, guardanapos vinho e vegetais assados"></picture></div><div class="contact-copy"><p class="eyebrow">05 / MAIS UM BOM ENCONTRO</p><h2 id="contact-title">A mesa está<br><em>esperando.</em></h2><p>Junte as pessoas. A gente prepara o clima.</p><button class="button" data-reserve>Reservar mesa <span aria-hidden="true">↗</span></button><span class="small-note">Canal de reservas e contato em breve.</span></div></section>
+    <div class="closing-line"><span>BOA COMIDA.</span><span class="closing-star" aria-hidden="true">✳</span><span>BOA COMPANHIA.</span><span class="closing-star" aria-hidden="true">✳</span><span>BRAVO.</span></div>
+  </main>
+  <footer><div class="wrap footer-top"><a class="brand" href="#inicio" aria-label="BRAVO — Voltar ao início"><img src="assets/bravo-logo.svg" width="264" height="92" alt="BRAVO — Parrilla & Bar" loading="lazy"></a><p>Fogo, sabor<br>e bons encontros.</p><nav aria-label="Navegação do rodapé"><a href="#nossa-casa">Nossa casa</a><a href="#cardapio">Cardápio</a><a href="#ambiente">Ambiente</a><a href="#localizacao">Localização</a><a href="#contato">Contato</a></nav><a class="back-top" href="#inicio" aria-label="Voltar ao início">↑</a></div><div class="wrap footer-bottom"><span>© <span id="year">2026</span> BRAVO — Parrilla & Bar</span><span>Site conceitual · Imagens ilustrativas</span></div></footer>
+  <dialog id="reserve-dialog" aria-labelledby="reserve-title"><button class="dialog-close" data-close aria-label="Fechar reserva">×</button><p class="eyebrow">VAMOS NOS ENCONTRAR</p><h2 id="reserve-title">Uma mesa<br>para <em>você.</em></h2><p class="dialog-intro">Prepare sua solicitação. As reservas online ainda não estão disponíveis; nenhuma informação será enviada.</p><form id="reserve-form"><div class="form-grid"><label>Seu nome<input name="name" autocomplete="name" maxlength="80" required placeholder="Como podemos chamar você?"></label><label>Pessoas<select name="guests"><option value="2">2 pessoas</option><option value="1">1 pessoa</option><option value="3">3 pessoas</option><option value="4">4 pessoas</option><option value="5">5 pessoas</option><option value="6">6 pessoas</option><option value="7 ou mais">7 ou mais pessoas</option></select></label><label>Data<input type="date" name="date" required></label><label>Horário desejado<input type="time" name="time" required></label><label class="form-full">Observações <span>(opcional)</span><textarea name="notes" rows="2" maxlength="400" placeholder="Algo que gostaria de nos contar?"></textarea></label></div><button class="button form-submit" type="submit">Preparar solicitação <span aria-hidden="true">→</span></button></form><div id="reserve-result" hidden><p class="result-label">SOLICITAÇÃO PREPARADA · NÃO ENVIADA</p><p id="reserve-summary"></p><button class="button" id="copy-reservation">Copiar solicitação</button><button class="text-link" id="edit-reservation">Editar dados <span aria-hidden="true">←</span></button><p id="copy-status" class="small-note" role="status"></p></div></dialog>
+  <dialog id="menu-dialog" aria-labelledby="menu-dialog-title"><button class="dialog-close" data-close aria-label="Fechar cardápio">×</button><p class="eyebrow">UM GOSTINHO DA BRAVO</p><h2 id="menu-dialog-title">À <em>mesa.</em></h2><p class="dialog-intro">Seleção conceitual. Itens, disponibilidade e preços serão confirmados no cardápio final.</p><div class="menu-filters" role="group" aria-label="Categorias do cardápio"><button data-filter="all" aria-pressed="true">Tudo</button><button data-filter="parrilla" aria-pressed="false">Da parrilla</button><button data-filter="burger" aria-pressed="false">Entre pães</button><button data-filter="bar" aria-pressed="false">Do bar</button></div><div id="menu-items"></div><button class="button menu-reserve" data-reserve>Planeje seu encontro <span aria-hidden="true">↗</span></button></dialog>
+  <noscript><p class="noscript-note">Ative JavaScript para explorar o cardápio e preparar uma solicitação de reserva. A navegação pelas seções continua disponível.</p></noscript>
+</body>
+</html>
